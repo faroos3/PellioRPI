@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'home',
+    'accounts',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -76,9 +78,9 @@ WSGI_APPLICATION = 'PellioRPI.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'pellio',
+        'NAME': 'Pelliodb',
         'USER': 'root',
-        'PASSWORD': 'abc123',
+        'PASSWORD': 'Pellio',
         'HOST': '127.0.0.1',
     }
 }
