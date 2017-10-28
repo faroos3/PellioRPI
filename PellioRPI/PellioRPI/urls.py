@@ -16,7 +16,11 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 
+from accounts import views as account_views
+
 urlpatterns = [
     url(r'^polls/', include('polls.urls')),
     url(r'^admin/', admin.site.urls),
+    url(r'^$', include('home.urls')),
+    url(r'^signup/$', account_views.signup, name='signup'),
 ]
