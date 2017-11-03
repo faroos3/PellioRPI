@@ -6,6 +6,34 @@ p
 {
     font: "Lato";
 }
+ol 
+{
+    display: contents;
+    list-style-type: decimal-leading-zero;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+.grid
+{
+    font: "Arial";
+    list-style-type: none;
+}
+
+.radiotext
+{ 
+    margin: 10px 10px 0px 0px;
+}
+#PANAS
+{
+    background: #fcf3cf;
+}
+#mini
+{
+    background: #fad7a0;
+}
 #header_wrapper
 {
  width:100%;
@@ -95,7 +123,7 @@ p
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 750px;
+  max-width:1050px;
   position: relative;
   margin: auto;
 }
@@ -174,4 +202,8 @@ p
  display: inline-block;
  position: relative;
  text-shadow: 0 1px 2px rgba(0,0,0,.5);
+}
+#step3
+{
+    background: #f9e8f7;
 }
