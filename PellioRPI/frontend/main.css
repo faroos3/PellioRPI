@@ -26,14 +26,6 @@ ol
 { 
     margin: 10px 10px 0px 0px;
 }
-#PANAS
-{
-    background: #fcf3cf;
-}
-#mini
-{
-    background: #fad7a0;
-}
 #header_wrapper
 {
  width:100%;
@@ -203,7 +195,19 @@ ol
  position: relative;
  text-shadow: 0 1px 2px rgba(0,0,0,.5);
 }
+#step1
+{
+    background: #ffb3c6;
+}
+#step2
+{
+    background: #b3ecff;
+}
 #step3
 {
-    background: #f9e8f7;
+    background: #ecffb3;
+}
+#First
+{
+    background: #ffd9b3;
 }

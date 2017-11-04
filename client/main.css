@@ -1,3 +1,31 @@
+h1
+{
+    font: "Lato";
+}
+p
+{
+    font: "Lato";
+}
+ol 
+{
+    display: contents;
+    list-style-type: decimal-leading-zero;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+.grid
+{
+    font: "Arial";
+    list-style-type: none;
+}
+
+.radiotext
+{ 
+    margin: 10px 10px 0px 0px;
+}
 #header_wrapper
 {
  width:100%;
@@ -87,13 +115,13 @@
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width:1050px;
   position: relative;
   margin: auto;
 }
 
 .footer {
-  position: absolute;
+  position: relative;
   right: 0;
   bottom: 0;
   left: 0;
@@ -108,21 +136,24 @@
  padding:0px;
  text-align:center;
  width:980px;
+ font: "Lato"
 }
 #wrapper div
 {
  float:center;
- font-family: helvetica, arial, sans-serif;
+ font: "Lato";
 }
 #wrapper #div2
 {
  margin-top:10px;
  text-align:center;
+ font: "Lato";
 }
 #wrapper #div2 form li
 {
  list-style-type:none;
  margin-top:10px;
+ font: "Lato";
 }
 #wrapper #div2 form li input[type="text"]
 {
@@ -130,7 +161,8 @@
  height:40px;
  border-radius:5px;
  padding-left:10px;
- font-size:18px;
+ font-size:18px; 
+ font: "Lato";
  border:1px solid #BDBDBD;
 }
 #wrapper #div2 form li input[type="password"]
@@ -150,12 +182,11 @@
  font-size:19px;
  margin-top: 10px;
  margin-bottom: 10px;
- font-family: 'Freight Sans Bold', helvetica, arial, sans-serif !important;
+ font-family: "Lato" !important;
  font-weight: bold !important;
- background: linear-gradient(#67ae55, #578843);
- background-color: #69a74e;
+ background: linear-gradient(#ffa154, #ffa154);
+ background-color: #ffa154;
  box-shadow: inset 0 1px 1px #a4e388;
- border-color: #3b6e22 #3b6e22 #2c5115;
  border: 1px solid;
  border-radius: 5px;
  color: #fff;
@@ -163,4 +194,20 @@
  display: inline-block;
  position: relative;
  text-shadow: 0 1px 2px rgba(0,0,0,.5);
+}
+#step1
+{
+    background: #ffb3c6;
+}
+#step2
+{
+    background: #b3ecff;
+}
+#step3
+{
+    background: #ecffb3;
+}
+#First
+{
+    background: #ffd9b3;
 }
