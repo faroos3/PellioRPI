@@ -20,11 +20,13 @@
 	<div id="wrapper">
 		<div id="div2">
 			<br>
-			<form action = "login">
-				<li><input type="text" placeholder= "Username"></li>
-				<li><input type="password" placeholder="New password"></li>
-				<li><input type="password" placeholder="Re-enter password"></li>
-				<li><input type="submit" value="Create an account"></li>
+			<form method="POST">
+				{% csrf_token %}
+				{{ form.as_p }}
+				<!-- <li><input type="username" name="username" placeholder= "Username"></li>
+				<li><input type="password" name="password1" placeholder="New password"></li>
+				<li><input type="password" name="password2" placeholder="Re-enter password"></li> -->
+				<li><button type="submit">Sign Up</button></li>
 			</form>
 		</div>
 	</div>
