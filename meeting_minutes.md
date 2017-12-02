@@ -6,10 +6,10 @@ Samad thought it would be a good idea to have the Pellio team's weekly meeting m
 
 ### 10/14/2017
 
-·	Alston 
-  o	Accomplishments from past week
-    ▪ Connected MySQL to the django website
-    ▪ Created a MySQL database.
+*Alston
+  * Accomplishments from past week
+    * Connected MySQL to the django website
+    * Created a MySQL database.
   o	Plans for this week 
     ▪ Create a virtual environment for the Pellio project
     ▪	Migrate the changes in the terminal
@@ -17,7 +17,7 @@ Samad thought it would be a good idea to have the Pellio team's weekly meeting m
     ▪	Setup that admin page for Pellio
   o	Roadblocks 
     ▪	Setting up a local version runs Python 2.7 and causes compiling issues. (Will definitely set up a virtual environment for the project so that we could have it running on Python 3.)
- · Mario
+*Mario
   o	Accomplishments from past week
     ▪	Setup MySQL and MySQL database
     ▪	Connected database to local Django website
