@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 """
 Django settings for PellioRPI project.
 
