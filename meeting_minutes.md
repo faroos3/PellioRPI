@@ -123,3 +123,59 @@ Samad thought it would be a good idea to have the Pellio team's weekly meeting m
 * GIT commit! 
 * Have a blog post done by 10/22. A mid-point blogpost describing what you've done up to now, any challenges you've faced, and what you have planned to do. 
 * Professor Moorthy was concerned with the amount of commits + blog posts, make sure those are up. 
+
+.
+..
+...
+....
+
+### 12/2/2017
+#### Updates 
+* Alston
+   * Accomplishments from past week
+      * Writing blog post about the PANAS. 
+  * Plans for this week
+      *  Researching on JSON and getting info from radio buttons into tables. 
+   * Roadblocks 
+      *  Getting values from radio buttons. 
+      *  Connecting backend to mySQL. 
+* Mario
+   * Accomplishments from past week
+      * Nothing. 
+   * Plans for this week 
+      * Write another blog post. 
+      * Support as needed. 
+      * write a wiki page explaining on how to develop for backend. 
+   * Roadblocks 
+      * Time. 
+* Helen 
+   * Accomplishments from past week
+      * Made some changes based on Richi + Samad's feedback. 
+      * Figured out before values. 
+   * Plans for this week 
+      * After test values into JSON format. 
+      * User dashboard stuff. 
+   * Roadblocks 
+      * Learning. 
+* Vikram 
+   * Accomplishments from past week
+      * Nothing, stressful week. 
+   *	Plans for this week 
+      *	Meet up with Helen to work on radio buttons and dashboard. 
+   *	Roadblocks 
+      * Time. 
+ * Samad
+   *	Accomplishments from past week
+      *	Started the wiki, 2 pages currently. 
+      * Cleaned the repo for our secret key, whoops. 
+      * Added some more meeting minutes into this document. 
+   *	Plans for this week 
+      *	Add more meeting minutes now that template is done. 
+      * Write some more documentation. 
+      * Support Alston + Helen with PANAS stuff. 
+   *	Roadblocks 
+      * Exams + presentations. 
+#### Announcements 
+*  Clean the branches with instructions Samad sent. 
+* Sprint goal - tying up loose ends, and document. 
+* Have 4 blog posts. 
