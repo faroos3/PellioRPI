@@ -79,9 +79,9 @@ WSGI_APPLICATION = 'PellioRPI.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Pelliodb',
+        'NAME': 'pellio',
         'USER': 'root',
-        'PASSWORD': 'Pellio',
+        'PASSWORD': 'abc123',
         'HOST': '127.0.0.1',
     }
 }
