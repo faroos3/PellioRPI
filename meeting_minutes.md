@@ -160,21 +160,21 @@ Samad thought it would be a good idea to have the Pellio team's weekly meeting m
 * Vikram 
    * Accomplishments from past week
       * Nothing, stressful week. 
-   *	Plans for this week 
+   * Plans for this week 
       *	Meet up with Helen to work on radio buttons and dashboard. 
-   *	Roadblocks 
+   * Roadblocks 
       * Time. 
  * Samad
-   *	Accomplishments from past week
+   * Accomplishments from past week
       *	Started the wiki, 2 pages currently. 
       * Cleaned the repo for our secret key, whoops. 
       * Added some more meeting minutes into this document. 
-   *	Plans for this week 
-      *	Add more meeting minutes now that template is done. 
-      * Write some more documentation. 
-      * Support Alston + Helen with PANAS stuff. 
-   *	Roadblocks 
-      * Exams + presentations. 
+   * Plans for this week 
+       *	Add more meeting minutes now that template is done. 
+       * Write some more documentation. 
+       * Support Alston + Helen with PANAS stuff. 
+   * Roadblocks
+       * Exams + presentations. 
 #### Announcements 
 *  Clean the branches with instructions Samad sent. 
 * Sprint goal - tying up loose ends, and document. 
