@@ -179,3 +179,52 @@ Samad thought it would be a good idea to have the Pellio team's weekly meeting m
 *  Clean the branches with instructions Samad sent. 
 * Sprint goal - tying up loose ends, and document. 
 * Have 4 blog posts. 
+
+### 12/9/2017
+#### Updates 
+* Alston
+   * Made progress on getting the data from JSON format.  
+  * Plans for this week
+      *  researching views to get the data into the models. 
+      * Fourth and final blog post. 
+   * Roadblocks 
+      *  Time. 
+* Mario
+   * Accomplishments from past week
+      * Wrote a text file with descriptions on how to contribute to backend. 
+   * Plans for this week 
+      * Put the text file into the wiki page.  
+      * Final blog post. 
+   * Roadblocks 
+      * None. 
+* Helen 
+   * Accomplishments from past week
+      * 
+   * Plans for this week 
+      * 
+   * Roadblocks 
+      *  
+* Vikram 
+   * Accomplishments from past week
+      * Radio button work that Helen said to do. 
+   * Plans for this week 
+      *	Dashboard material if time found. 
+      * Fourth and final blog post. 
+   * Roadblocks 
+      * None. 
+ * Samad
+   * Accomplishments from past week
+      *	Added meeting minutes. 
+      * wrote third blog post. 
+   * Plans for this week 
+       *	Add rest of meeting minutes. 
+       * Fourth and final blog post. 
+       * 
+       * Talk to Richi about integrating Pellio into Mozilla network and all necessary documentation. 
+   * Roadblocks
+       * Lots of work this weekend! 
+#### Announcements 
+*  Thanks to Professor Moorthy for everything! 
+* Make sure to have four blog posts! 
+* Commit all the working code you have to master and make sure to write the documentation with it in the command! 
+* Today was the last meeting for the team. Thank you for all the hard work you've put into the project! There's always going to be a space for you on Pellio! 
