@@ -124,10 +124,169 @@ Samad thought it would be a good idea to have the Pellio team's weekly meeting m
 * Have a blog post done by 10/22. A mid-point blogpost describing what you've done up to now, any challenges you've faced, and what you have planned to do. 
 * Professor Moorthy was concerned with the amount of commits + blog posts, make sure those are up. 
 
-.
-..
-...
-....
+### 10/28/2017
+#### Updates 
+* Alston
+   * Accomplishments from past week
+      * Admin page is all set up and working. 
+  * Plans for this week
+      * Push working code. 
+      * Conenct login page to admin page. 
+   * Roadblocks 
+      * None so far. 
+* Mario
+   * Accomplishments from past week
+      * Registration is almost done, will be done by tomorrow.
+   * Plans for this week 
+      * Finish registration by tomorrow. 
+      * Talk to Helen about seperating header with HTML to make implementation easier. 
+   * Roadblocks 
+      * None yet.  
+* Helen - Not present. 
+   * Accomplishments from past week 
+      * 
+   * Plans for this week 
+      *
+   * Roadblocks
+      * 
+* Vikram 
+   * Accomplishments from past week
+      * Started PANAS mini-experiment on homepage. 
+      * using radio buttons. 
+   *	Plans for this week 
+      *	Get JavaScript for PANAS working. 
+      * Get information from Samad 
+      * Talk to Helen about styling. 
+   *	Roadblocks 
+      * JavaScript knowledge, or lack thereof. 
+ * Samad
+   *	Accomplishments from past week
+      *	Started dependencies file. 
+      * Started meeting minutes file. 
+   *	Plans for this week 
+      *	Start the wiki 
+      * Send PANAS info to Helen & Vikram 
+      * Update Trello 
+      * Blog posts 
+      * start slides for the presentation. 
+   *	Roadblocks 
+      * Time. 
+#### Announcements 
+* Login system sprint officially done - extra day for lag time. 
+* Next Sprint - PANAS Mini-experiment
+   * Backend - start designing what tables are going to be needed to send out information. 
+   * Frontend - user dashboard and PANAS stuff. 
+* Presentation soon! 
+* Midpoint blog posts? Samad, Alston, Mario have to do them. 
+
+### 11/04/2017 
+#### Updates 
+* Alston
+   * Accomplishments from past week
+      * Nothing 
+  * Plans for this week
+      * Finish PANAS backend stuff. 
+      * Figuring how models work with creating Tables in MySQL.
+   * Roadblocks 
+      * Don't know how to get values from PANAS buttons in order to store info in databse. 
+* Mario
+   * Accomplishments from past week
+      * Login is complete. 
+   * Plans for this week 
+      * Complete PANAS page with Alston. 
+   * Roadblocks
+      * Workload piling up. 
+* Helen 
+   * Accomplishments from past week
+      * None. 
+   * Plans for this week 
+      * Working on user dashboard. 
+   * Roadblocks
+       * Pages are static. 
+       * Check mark functionality not working. 
+ * Vikram - Not present 
+ * Samad - Not present. 
+ 
+ ### 11/11/2017
+ #### Updates 
+ * Alston
+   * Accomplishments from past week
+      * N/A
+  * Plans for this week
+      * Look into radio button widget forms. 
+      Finish PANAS MySQL 
+   * Roadblocks 
+      * Learning on how radio button widget forms work. 
+* Mario
+   * Accomplishments from past week
+      * Home page colors and footer now display correctly on server. 
+   * Plans for this week 
+      * Prepare for presentation and work on radio buttons. 
+   * Roadblocks 
+      * Learning django radio button widget. 
+* Helen - Not present, submitted later. 
+   * Accomplishments from past week
+      * N/A, has been sick. 
+   * Plans for this week
+      * Not be sick. 
+      * Focus on working on the PANAS. 
+      * Getting MySQL installed. 
+   * Roadblocks
+       * Not being able to see forms because MySQL and Django aren't up. 
+       * Sick 
+       * Time 
+ * Vikram - Not present. 
+ * Samad - Not present, but working on presentation. 
+ 
+ ### 11/18/2017
+ #### Updates 
+ * Alston
+   * Accomplishments from past week
+      * Same old. 
+      * Presentation! 
+  * Plans for this week
+      *  Look how radio buttons work, and follow advice Richie gave us. 
+   * Roadblocks 
+      *  Getting values from radio buttons.  
+* Mario
+   * Accomplishments from past week
+      * Update the dependencies file on how to get MySQL working on Windows. 
+      * Presentation. 
+   * Plans for this week 
+      * Look into how to redirect user to a dashboard once logged in. 
+      * Presentation. 
+   * Roadblocks 
+      * None really. 
+* Helen 
+   * Accomplishments from past week
+      * Talked to Richie about radio buttons, made function and made changes to name fields. 
+   * Plans for this week 
+      * Ask Richie about a roadblock at small group, or slack. 
+   * Roadblocks 
+      * Told to make ID/class for radio buttons, that doesn't work as you can pick multiple options in same fie;d. 
+      * Names were being weird. 
+      * Trouble calling functions. 
+* Vikram 
+   * Accomplishments from past week
+      * Spoke with Helen on working with radio buttons, been trying things. 
+   * Plans for this week 
+      *	Fixing radio buttons. 
+      * Write some code for User Dashboard. 
+   * Roadblocks 
+      * Time. 
+ * Samad
+   * Accomplishments from past week
+      *	Presentation was a success! 
+      * Spoke with Richie about MVC structure needed. 
+   * Plans for this week 
+       * ...Finally start the wiki. 
+       * Add meeting minutes. 
+   * Roadblocks
+       * Unfamiliarity with writing controllers. 
+#### Announcements 
+*  Great job with the presentation! 
+* Next sprint goal - tying up loose ends. 
+* No meeting on the 25th because of Thanksgiving! 
 
 ### 12/2/2017
 #### Updates 
