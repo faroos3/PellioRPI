@@ -18,14 +18,19 @@
 				<li>Username<br><input type="text" name="username"></li>
  				<li>Password<br><input type="password" name="password"><br>
  					<a href="signup">Need an account?</a></li> 
- 				<li><button type="submit">Login</button></li>
+ 				<li><input type="submit" name="login" value="Log In"></li>
 			</form>
 		</div>
 	</div>
+    <hr>
+        <div id = "First">
+    <br>
+    <br>
 
 	<div class="slideshow-container" >
-		<img class="slide" src="{% static 'img1.jpeg' %}" style="width:100%">
-		<img class="slide" src="{% static 'img2.jpeg' %}" style="width:100%">
+		<img class="slide" src="{% static 'positive1.jpg' %}" style="width:100%">
+		<img class="slide" src="{% static 'positive2.jpg' %}" style="width:100%">
+		<img class="slide" src="{% static 'positive3.jpg' %}" style="width:100%">
 	</div>
 
 	<script>
@@ -41,18 +46,419 @@
     	myIndex++;
 	    if (myIndex > x.length) {myIndex = 1}    
   	  x[myIndex-1].style.display = "block";  
-    	setTimeout(carousel, 3000); // Change image every 3 seconds
+    	setTimeout(carousel, 6000); // Change image every 6 seconds
 		}
 	</script>
+	<br>
+    <br>
+        </div>
+    <br>
+    <div id="step1">
+    <h1 align="left">Step 1: Try an experiment!</h1>
+    <hr>
+	<p align="left"> Instructions: Try a positive psychology experiment, "Positive and Negative Affect Scale", PANAS for short. Read each feeling or emotion and select how you feel right now.  </p>
+    <br>
+    <p align = "left"><strong>Level of feeling/emotion currently</strong></p>
+        <div id = "Survey" align = "center">
+        <table class="grid" align ="center" cellspacing="20">
+ 
+ 
+
+
+ <tr>
+   <td></td>
+    <td>Not at<br>All</td>
+   <td>A Little</td>
+   <td>Moderately</td>
+   <td>Quite a Bit</td>
+   <td>Strongly</td>
+ </tr>
+
+ <ol>
+ 	<tr id = "Interested_b" class="datafield">
+   <td class="griditem"><li>Interested</li></td>
+   <td><input type=radio value="1"></td>
+   <td><input type=radio value="2"></td>
+   <td><input type=radio value="3"></td>
+   <td><input type=radio value="4"></td>
+   <td><input type=radio value="5"></td>
+ 	</tr>	
+ 
+ <tr id ="g2" class="datafield">
+   <td class="griditem"><li>Irritable</li></td>
+   <td><input type=radio  name="Irritable_b" value="1"></td>
+   <td><input type=radio  name="Irritable_b" value="2"></td>
+   <td><input type=radio  name="Irritable_b" value="3"></td>
+   <td><input type=radio  name="Irritable_b" value="4"></td>
+   <td><input type=radio  name="Irritable_b" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Distressed</li></td>
+   <td><input type=radio  name="Distressed_b" value="1"></td>
+   <td><input type=radio  name="Distressed_b" value="2"></td>
+   <td><input type=radio  name="Distressed_b" value="3"></td>
+   <td><input type=radio  name="Distressed_b" value="4"></td>
+   <td><input type=radio  name="Distressed_b" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Alert</li></td>
+   <td><input type=radio  name="Alert_b" value="1"></td>
+   <td><input type=radio  name="Alert_b" value="2"></td>
+   <td><input type=radio  name="Alert_b" value="3"></td>
+   <td><input type=radio  name="Alert_b" value="4"></td>
+   <td><input type=radio  name="Alert_b" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Excited</li></td>
+   <td><input type=radio  name="Excited_b" value="1"></td>
+   <td><input type=radio  name="Excited_b" value="2"></td>
+   <td><input type=radio  name="Excited_b" value="3"></td>
+   <td><input type=radio  name="Excited_b" value="4"></td>
+   <td><input type=radio  name="Excited_b" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Ashamed</li></td>
+   <td><input type=radio  name="Ashamed_b" value="1"></td>
+   <td><input type=radio  name="Ashamed_b" value="2"></td>
+   <td><input type=radio  name="Ashamed_b" value="3"></td>
+   <td><input type=radio  name="Ashamed_b" value="4"></td>
+   <td><input type=radio  name="Ashamed_b" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Upset</li></td>
+   <td><input type=radio  name="griditem7" value="1"></td>
+   <td><input type=radio  name="griditem7" value="2"></td>
+   <td><input type=radio  name="griditem7" value="3"></td>
+   <td><input type=radio  name="griditem7" value="4"></td>
+   <td><input type=radio  name="griditem7" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Inspired</li></td>
+   <td><input type=radio  name="griditem8" value="1"></td>
+   <td><input type=radio  name="griditem8" value="2"></td>
+   <td><input type=radio  name="griditem8" value="3"></td>
+   <td><input type=radio  name="griditem8" value="4"></td>
+   <td><input type=radio  name="griditem8" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Strong</li></td>
+   <td><input type=radio  name="griditem9" value="1"></td>
+   <td><input type=radio  name="griditem9" value="2"></td>
+   <td><input type=radio  name="griditem9" value="3"></td>
+   <td><input type=radio  name="griditem9" value="4"></td>
+   <td><input type=radio  name="griditem9" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Nervous</li></td>
+   <td><input type=radio  name="Interested_b0" value="1"></td>
+   <td><input type=radio  name="Interested_b0" value="2"></td>
+   <td><input type=radio  name="Interested_b0" value="3"></td>
+   <td><input type=radio  name="Interested_b0" value="4"></td>
+   <td><input type=radio  name="Interested_b0" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Guilty</li></td>
+   <td><input type=radio  name="Interested_b1" value="1"></td>
+   <td><input type=radio  name="Interested_b1" value="2"></td>
+   <td><input type=radio  name="Interested_b1" value="3"></td>
+   <td><input type=radio  name="Interested_b1" value="4"></td>
+   <td><input type=radio  name="Interested_b1" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Determined</li></td>
+   <td><input type=radio  name="Interested_b2" value="1"></td>
+   <td><input type=radio  name="Interested_b2" value="2"></td>
+   <td><input type=radio  name="Interested_b2" value="3"></td>
+   <td><input type=radio  name="Interested_b2" value="4"></td>
+   <td><input type=radio  name="Interested_b2" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Scared</li></td>
+   <td><input type=radio  name="Interested_b3" value="1"></td>
+   <td><input type=radio  name="Interested_b3" value="2"></td>
+   <td><input type=radio  name="Interested_b3" value="3"></td>
+   <td><input type=radio  name="Interested_b3" value="4"></td>
+   <td><input type=radio  name="Interested_b3" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Attentive</li></td>
+   <td><input type=radio  name="Interested_b4" value="1"></td>
+   <td><input type=radio  name="Interested_b4" value="2"></td>
+   <td><input type=radio  name="Interested_b4" value="3"></td>
+   <td><input type=radio  name="Interested_b4" value="4"></td>
+   <td><input type=radio  name="Interested_b4" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Hostile</li></td>
+   <td><input type=radio  name="Interested_b5" value="1"></td>
+   <td><input type=radio  name="Interested_b5" value="2"></td>
+   <td><input type=radio  name="Interested_b5" value="3"></td>
+   <td><input type=radio  name="Interested_b5" value="4"></td>
+   <td><input type=radio  name="Interested_b5" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Jittery</li></td>
+   <td><input type=radio  name="Interested_b6" value="1"></td>
+   <td><input type=radio  name="Interested_b6" value="2"></td>
+   <td><input type=radio  name="Interested_b6" value="3"></td>
+   <td><input type=radio  name="Interested_b6" value="4"></td>
+   <td><input type=radio  name="Interested_b6" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Enthusiastic</li></td>
+   <td><input type=radio  name="Interested_b7" value="1"></td>
+   <td><input type=radio  name="Interested_b7" value="2"></td>
+   <td><input type=radio  name="Interested_b7" value="3"></td>
+   <td><input type=radio  name="Interested_b7" value="4"></td>
+   <td><input type=radio  name="Interested_b7" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Active</li></td>
+   <td><input type=radio  name="Interested_b8" value="1"></td>
+   <td><input type=radio  name="Interested_b8" value="2"></td>
+   <td><input type=radio  name="Interested_b8" value="3"></td>
+   <td><input type=radio  name="Interested_b8" value="4"></td>
+   <td><input type=radio  name="Interested_b8" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Proud</li></td>
+   <td><input type=radio  name="Interested_b9" value="1"></td>
+   <td><input type=radio  name="Interested_b9" value="2"></td>
+   <td><input type=radio  name="Interested_b9" value="3"></td>
+   <td><input type=radio  name="Interested_b9" value="4"></td>
+   <td><input type=radio  name="Interested_b9" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Afraid</li></td>
+   <td><input type=radio  name="Irritable_b0" value="1"></td>
+   <td><input type=radio  name="Irritable_b0" value="2"></td>
+   <td><input type=radio  name="Irritable_b0" value="3"></td>
+   <td><input type=radio  name="Irritable_b0" value="4"></td>
+   <td><input type=radio  name="Irritable_b0" value="5"></td>
+ </tr>
+    </ol>
+        </table>
+            <div id = "pan_result_1">
+            <form action = "submit" align = "center">
+                <input type = "submit" value="Results">
+            </form>
+            </div>
+            </div>
+        </div>
+    <br>
+
 
 	<br>
-	<h1><center> Try an experiment!</h1></center>
-	<p><center> short description </p></center>
-	<br>
-	<h1><center> mini-experiment trying out </h1></center>
+    <div id = "step2">
+	<h1 align="left">Step 2: Watch this video! (or any comedy video you want)</h1>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/REwzZcxeVQI" frameborder="0" allowfullscreen></iframe></p>
+        <br>
+        <br>
+        </div>
+    <br>
+    <br>
+        <div id = "step3">
+        <h1 align = "left">Step 3: Fill out the PANAS again</h1>
+        <hr>
+            <br>
+                    <div id = "Survey2" align = "center">
+                    <table class="grid" align ="center" cellspacing="20">
+ <tr>
+   <td></td>
+    <td>Not at<br>All</td>
+   <td>A Little</td>
+   <td>Moderately</td>
+   <td>Quite a Bit</td>
+   <td>Strongly</td>
+ </tr>
 
-	<!-- Footer -->
-	<div class="footer">Powered by <a href="https://rcos.io" title="RCOS">RCOS</a></div>
-</body>
+ <ol>
+ <tr>
+   <td class="griditem"><li>Interested</li></td>
+   <td><input type=radio  name="Interested_a" value="1"></td>
+   <td><input type=radio  name="Interested_a" value="2"></td>
+   <td><input type=radio  name="Interested_a" value="3"></td>
+   <td><input type=radio  name="Interested_a" value="4"></td>
+   <td><input type=radio  name="Interested_a" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Irritable</li></td>
+   <td><input type=radio  name="Irritable_b1" value="1"></td>
+   <td><input type=radio  name="Irritable_b1" value="2"></td>
+   <td><input type=radio  name="Irritable_b1" value="3"></td>
+   <td><input type=radio  name="Irritable_b1" value="4"></td>
+   <td><input type=radio  name="Irritable_b1" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Distressed</li></td>
+   <td><input type=radio  name="Irritable_b2" value="1"></td>
+   <td><input type=radio  name="Irritable_b2" value="2"></td>
+   <td><input type=radio  name="Irritable_b2" value="3"></td>
+   <td><input type=radio  name="Irritable_b2" value="4"></td>
+   <td><input type=radio  name="Irritable_b2" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Alert</li></td>
+   <td><input type=radio  name="Irritable_b3" value="1"></td>
+   <td><input type=radio  name="Irritable_b3" value="2"></td>
+   <td><input type=radio  name="Irritable_b3" value="3"></td>
+   <td><input type=radio  name="Irritable_b3" value="4"></td>
+   <td><input type=radio  name="Irritable_b3" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Excited</li></td>
+   <td><input type=radio  name="Irritable_b4" value="1"></td>
+   <td><input type=radio  name="Irritable_b4" value="2"></td>
+   <td><input type=radio  name="Irritable_b4" value="3"></td>
+   <td><input type=radio  name="Irritable_b4" value="4"></td>
+   <td><input type=radio  name="Irritable_b4" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Ashamed</li></td>
+   <td><input type=radio  name="Irritable_b5" value="1"></td>
+   <td><input type=radio  name="Irritable_b5" value="2"></td>
+   <td><input type=radio  name="Irritable_b5" value="3"></td>
+   <td><input type=radio  name="Irritable_b5" value="4"></td>
+   <td><input type=radio  name="Irritable_b5" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Upset</li></td>
+   <td><input type=radio  name="Irritable_b6" value="1"></td>
+   <td><input type=radio  name="Irritable_b6" value="2"></td>
+   <td><input type=radio  name="Irritable_b6" value="3"></td>
+   <td><input type=radio  name="Irritable_b6" value="4"></td>
+   <td><input type=radio  name="Irritable_b6" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Inspired</li></td>
+   <td><input type=radio  name="Irritable_b7" value="1"></td>
+   <td><input type=radio  name="Irritable_b7" value="2"></td>
+   <td><input type=radio  name="Irritable_b7" value="3"></td>
+   <td><input type=radio  name="Irritable_b7" value="4"></td>
+   <td><input type=radio  name="Irritable_b7" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Strong</li></td>
+   <td><input type=radio  name="Irritable_b8" value="1"></td>
+   <td><input type=radio  name="Irritable_b8" value="2"></td>
+   <td><input type=radio  name="Irritable_b8" value="3"></td>
+   <td><input type=radio  name="Irritable_b8" value="4"></td>
+   <td><input type=radio  name="Irritable_b8" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Nervous</li></td>
+   <td><input type=radio  name="Irritable_b9" value="1"></td>
+   <td><input type=radio  name="Irritable_b9" value="2"></td>
+   <td><input type=radio  name="Irritable_b9" value="3"></td>
+   <td><input type=radio  name="Irritable_b9" value="4"></td>
+   <td><input type=radio  name="Irritable_b9" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Guilty</li></td>
+   <td><input type=radio  name="Distressed_b0" value="1"></td>
+   <td><input type=radio  name="Distressed_b0" value="2"></td>
+   <td><input type=radio  name="Distressed_b0" value="3"></td>
+   <td><input type=radio  name="Distressed_b0" value="4"></td>
+   <td><input type=radio  name="Distressed_b0" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Determined</li></td>
+   <td><input type=radio  name="Distressed_b1" value="1"></td>
+   <td><input type=radio  name="Distressed_b1" value="2"></td>
+   <td><input type=radio  name="Distressed_b1" value="3"></td>
+   <td><input type=radio  name="Distressed_b1" value="4"></td>
+   <td><input type=radio  name="Distressed_b1" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Scared</li></td>
+   <td><input type=radio  name="Distressed_b2" value="1"></td>
+   <td><input type=radio  name="Distressed_b2" value="2"></td>
+   <td><input type=radio  name="Distressed_b2" value="3"></td>
+   <td><input type=radio  name="Distressed_b2" value="4"></td>
+   <td><input type=radio  name="Distressed_b2" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Attentive</li></td>
+   <td><input type=radio  name="Distressed_b3" value="1"></td>
+   <td><input type=radio  name="Distressed_b3" value="2"></td>
+   <td><input type=radio  name="Distressed_b3" value="3"></td>
+   <td><input type=radio  name="Distressed_b3" value="4"></td>
+   <td><input type=radio  name="Distressed_b3" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Hostile</li></td>
+   <td><input type=radio  name="Distressed_b4" value="1"></td>
+   <td><input type=radio  name="Distressed_b4" value="2"></td>
+   <td><input type=radio  name="Distressed_b4" value="3"></td>
+   <td><input type=radio  name="Distressed_b4" value="4"></td>
+   <td><input type=radio  name="Distressed_b4" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Jittery</li></td>
+   <td><input type=radio  name="Distressed_b5" value="1"></td>
+   <td><input type=radio  name="Distressed_b5" value="2"></td>
+   <td><input type=radio  name="Distressed_b5" value="3"></td>
+   <td><input type=radio  name="Distressed_b5" value="4"></td>
+   <td><input type=radio  name="Distressed_b5" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Enthusiastic</li></td>
+   <td><input type=radio  name="Distressed_b6" value="1"></td>
+   <td><input type=radio  name="Distressed_b6" value="2"></td>
+   <td><input type=radio  name="Distressed_b6" value="3"></td>
+   <td><input type=radio  name="Distressed_b6" value="4"></td>
+   <td><input type=radio  name="Distressed_b6" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Active</li></td>
+   <td><input type=radio  name="Distressed_b7" value="1"></td>
+   <td><input type=radio  name="Distressed_b7" value="2"></td>
+   <td><input type=radio  name="Distressed_b7" value="3"></td>
+   <td><input type=radio  name="Distressed_b7" value="4"></td>
+   <td><input type=radio  name="Distressed_b7" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Proud</li></td>
+   <td><input type=radio  name="Distressed_b8" value="1"></td>
+   <td><input type=radio  name="Distressed_b8" value="2"></td>
+   <td><input type=radio  name="Distressed_b8" value="3"></td>
+   <td><input type=radio  name="Distressed_b8" value="4"></td>
+   <td><input type=radio  name="Distressed_b8" value="5"></td>
+ </tr>
+ <tr>
+   <td class="griditem"><li>Afraid</li></td>
+   <td><input type=radio  name="Distressed_b9" value="1"></td>
+   <td><input type=radio  name="Distressed_b9" value="2"></td>
+   <td><input type=radio  name="Distressed_b9" value="3"></td>
+   <td><input type=radio  name="Distressed_b9" value="4"></td>
+   <td><input type=radio  name="Distressed_b9" value="5"></td>
+ </tr>
+ 
+    </ol>
+        </table>
+            </div>
+            <div id = "pan_result_2">
+            <form action = "submit" align = "center">
+                <input type = "submit" value="Results">
+            </form>
+            </div>
+        </div>
+    <br>
+    <div class="footer">Powered by <a href="https://rcos.io" title="RCOS">RCOS</a></div>
+    </div>
+    </body>
 
+ 	<script>
+ 		//put into function and then move it back to the top
+ 	var test = document.querySelectorAll("tr.datafield");
+	for (var i = 0; i < test.length; ++i) {
+		//data = document.querySelector("tr#g" + i + " input:checked").value;
+		data = test[i].querySelector("input:checked");
+		console.log(data, test[i].id);
+	}
+ </script>
 </html>

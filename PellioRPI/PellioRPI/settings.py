@@ -31,7 +31,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'polls.apps.PollsConfig',
     'home',
     'accounts',
     'django.contrib.admin',
@@ -81,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'Pelliodb',
         'USER': 'root',
-        'PASSWORD': 'Pellio',
+        'PASSWORD': '',
         'HOST': '127.0.0.1',
     }
 }
