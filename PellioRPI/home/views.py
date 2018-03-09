@@ -17,3 +17,9 @@ def index(request):
 	else:
 		form = AuthenticationForm()
 	return render(request, 'home/home.html', {'form': form})
+
+def gad7(request):
+	return render(request, 'home/GAD7.html')
+	
+def phq9(request):
+	return render(request, 'home/PHQ9.html')
