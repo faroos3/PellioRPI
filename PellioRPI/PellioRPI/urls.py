@@ -23,6 +23,6 @@ urlpatterns = [
     path('', include('home.urls')),
     path('signup/', account_views.signup, name='signup'),
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),
-    path('gad7/', home_views.gad7, name='gad7'),
-	path('phq9/', home_views.phq9, name='phq9')
+    #path('gad7/', home_views.gad7, name='gad7'),
+	#path('phq9/', home_views.phq9, name='phq9')
 ]

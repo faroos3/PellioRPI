@@ -1,15 +1,21 @@
 h1
 {
-    font: "Lato";
+    /*font: "Lato";*/
+  font-size: 25px;
+  font-family: "Trebuchet MS", Trebuchet, monospace;
 }
 p
 {
-    font: "Lato";
+    /*font: "Lato";*/
+  font-size: 25px;
+  font-family: "Trebuchet MS", Trebuchet, sans-serif;
+  font-style: italic;
 }
 ol 
 {
     display: contents;
     list-style-type: decimal-leading-zero;
+    font-family: "Trebuchet MS", Trebuchet, sans-serif;
     margin-top: 1em;
     margin-bottom: 1em;
     margin-left: 0;
@@ -18,33 +24,34 @@ ol
 }
 .grid
 {
-    font: "Arial";
+    font: "Trebuchet MS";
     list-style-type: none;
 }
 
-.radiotext
+#radio form input
 { 
-    margin: 10px 10px 0px 0px;
+  font-family: "Trebuchet MS", Trebuchet, sans-serif;
+    margin: 0px 10px 0px 10px;
 }
 #header_wrapper
 {
  width:100%;
  min-width:980px;
- background-color:#A9A9A9;
+ background-color:#87CEDA;
 }
 #header
 {
- width:980px;
+ width:950px;
  margin:0px auto;
  padding:0px;
- height:85px;
+ height:100px;
 }
 #header li
 {
  list-style-type:none;
  float:left;
  text-align:left;
- color:white;
+ color: #FF4500;
 }
 #header #logo
 {
@@ -52,7 +59,7 @@ ol
 }
 #header form
 {
- margin-top:15px;
+ margin-top:8px;
  float:right;
 }
 #header form li
@@ -62,11 +69,12 @@ ol
 }
 #header form li a
 {
- color:white;
+ color:#FF4500;
  text-decoration:none;
 }
 #header form input[type="text"]
 {
+ font: "Lato";
  margin-top:3px;
  margin-bottom:3px;
  width:150px;
@@ -83,35 +91,48 @@ ol
  height:25px;
  padding-left:3px;
 }
+
+#header form input[type="newAccount"]
+{
+ height:22px;
+ margin-top:5px;
+ background-color:#8080ff;
+ color:#000066;
+ font-family: "Trebuchet MS", Trebuchet, sans-serif;
+ border:2px solid #08298A;
+}
 #header form input[type="submit"]
 {
  height:25px;
- margin-top:20px;
- background-color:#696969;
- color:white;
- border:1px solid #08298A;
+ margin-top:5px;
+ background-color:#8080ff;
+ color:#000066;
+ border:2px solid #08298A;
+ font-family: "Trebuchet MS", Trebuchet, sans-serif;
 }
 #footer_wrapper
 {
  width:100%;
  min-width:980px;
- background-color:#A9A9A9;
+ background-color:#87CEDA;
 }
-#footer
+#footer form input
 {
-  text-align:center;
-  padding-top:32px;
-  padding-bottom:32px;
+  background-color:#87CEDA
+  text-align:left;
+  padding-top:36px;
+  padding-bottom:0px;
 
 }
 *{
   margin: 0;
   padding: 0;
 }
-.slide
+.slide form input
 { 
   display:none
 }
+
 
 /* Slideshow container */
 .slideshow-container {
@@ -126,8 +147,10 @@ ol
   bottom: 0;
   left: 0;
   padding: 1rem;
-  background-color: #A9A9A9;
+  background-color: #87CEDA;
   text-align: center;
+  font-size: 15px;
+  font-family: "Trebuchet MS", Trebuchet, monospace;
 }
 
 #wrapper
@@ -182,10 +205,10 @@ ol
  font-size:19px;
  margin-top: 10px;
  margin-bottom: 10px;
- font-family: "Lato" !important;
+ font-family: "Trebuchet MS" !important;
  font-weight: bold !important;
- background: linear-gradient(#ffa154, #ffa154);
- background-color: #ffa154;
+ background: linear-gradient(#ffff4d, #ffa154);
+ background-color: #ffff80;
  box-shadow: inset 0 1px 1px #a4e388;
  border: 1px solid;
  border-radius: 5px;
@@ -197,17 +220,17 @@ ol
 }
 #step1
 {
-    background: #ffb3c6;
+    background: #ffd633;
 }
 #step2
 {
-    background: #b3ecff;
+    background: #ff8533;
 }
 #step3
 {
-    background: #ecffb3;
+    background: #ff6600;
 }
 #First
 {
-    background: #ffd9b3;
+    background: #ffff66;
 }
