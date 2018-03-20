@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import login as auth_login
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import authenticate
+from django.http import HttpResponseRedirect
+
 
 def index(request):
 	print("Home page")
@@ -11,7 +13,7 @@ def index(request):
 			user = authenticate(username=request.POST['username'],password = request.POST['password'])
 			if user is not None:
 				auth_login(request, user)
-				return render(request, 'home/dash.html')
+				return redirect('/dash')
 			else:
 				return render(request, 'home/dash-nouser.html')
 	else:
@@ -23,3 +25,12 @@ def gad7(request):
 	
 def phq9(request):
 	return render(request, 'home/PHQ9.html')
+	
+def dash(request):
+	return render(request, 'home/dash.html')
+	
+def gad7sub(request):
+	return HttpResponseRedirect('/dash')
+	
+def phq9sub(request):
+	return HttpResponseRedirect('/dash')
