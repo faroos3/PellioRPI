@@ -8,24 +8,6 @@ K and I are still working on installing pip or Mysql correctly. We are futzing a
 Members in attendance: Osama, Kelly
 Kelly got her environment finally set up and working properly. We got the images to show up in Internet Explorer as they were not able to prior to this meeting.
 
-2/26/2018
+2/26/218
 Members in attendance: Osama, Logan
 Logan is working on his environment on his laptop, and we decided to 'refactor' the file system of Pellio as right now it is very confusing and unintuitive. We will be working more on the refactoring tomorrow at small group meeting
-
-3/01/2018
-TODO
-
-3/06/2018
-Everyone in attendance
-Discussed how to go about one of our issues regarding login and landing pages. Began research on how to use Django framework to authenticate users.
-Logan has been meeting with Holly Traver discussing positive psychology and methodically building questionnaires. Kelly created a mini-website to
-test CSS/HTML code before implementing it in the actual project.
-
-3/08/2018
-Logan met up with Osama, Osama helped logan revise his code and helped error check. Logan also informed Osama that he read up on a Meta Anaylsis stating that there isn't really a clear way to measure stress reliably and scientifically, so that sucks. Guess Logan will read more papers about stress he guesses.
-
-3/20/2018
-All in attendance
-Apparently Logan is very bad at version control and management so Logan and Kelly spent some time combining both of our versions. It was tedious and saddening.
-Difu Joined the Group.
-Osama helped Difu set up the nesessary stuff
