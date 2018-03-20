@@ -17,12 +17,16 @@ from django.urls import include, path, re_path
 from django.contrib import admin
 from django.contrib.auth import views as auth_views
 from accounts import views as account_views
+from home import views as home_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),
     path('signup/', account_views.signup, name='signup'),
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),
-    #path('gad7/', home_views.gad7, name='gad7'),
-	#path('phq9/', home_views.phq9, name='phq9')
+	path('dash/',home_views.dash, name='dash'),
+	path('dash/gad7/', home_views.gad7, name='gad7'),
+	path('dash/phq9/', home_views.phq9, name='phq9'),
+	path('dash/phq9/submit', home_views.phq9, name='phq9sub'),
+	path('dash/gad7/submit', home_views.gad7, name='gad7sub'),
 ]
