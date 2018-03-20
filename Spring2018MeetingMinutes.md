@@ -23,3 +23,9 @@ test CSS/HTML code before implementing it in the actual project.
 
 3/08/2018
 Logan met up with Osama, Osama helped logan revise his code and helped error check. Logan also informed Osama that he read up on a Meta Anaylsis stating that there isn't really a clear way to measure stress reliably and scientifically, so that sucks. Guess Logan will read more papers about stress he guesses.
+
+3/20/2018
+All in attendance
+Apparently Logan is very bad at version control and management so Logan and Kelly spent some time combining both of our versions. It was tedious and saddening.
+Difu Joined the Group.
+Osama helped Difu set up the nesessary stuff
