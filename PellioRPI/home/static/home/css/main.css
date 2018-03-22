@@ -133,6 +133,10 @@ ol
   display:none
 }
 
+.slide {
+  margin: auto;
+}
+
 
 /* Slideshow container */
 .slideshow-container {
