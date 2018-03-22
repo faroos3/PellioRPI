@@ -18,19 +18,34 @@ def index(request):
 				return render(request, 'home/dash-nouser.html')
 	else:
 		form = AuthenticationForm()
+	if request.user.is_authenticated:
+		return HttpResponseRedirect('/dash')
 	return render(request, 'home/home.html', {'form': form})
 
+
+# Basic idea: if user not authenticated, redirected them to home. If they are, fulfill request.
+
 def gad7(request):
+	if not request.user.is_authenticated:
+		return HttpResponseRedirect('../')
 	return render(request, 'home/GAD7.html')
 	
 def phq9(request):
+	if not request.user.is_authenticated:
+		return HttpResponseRedirect('../')
 	return render(request, 'home/PHQ9.html')
 	
 def dash(request):
+	if not request.user.is_authenticated:
+		return HttpResponseRedirect('../')
 	return render(request, 'home/dash.html')
 	
 def gad7sub(request):
+	if not request.user.is_authenticated:
+		return HttpResponseRedirect('home/home.html')
 	return HttpResponseRedirect('/dash')
 	
 def phq9sub(request):
+	if not request.user.is_authenticated:
+		return HttpResponseRedirect('home/home.html')
 	return HttpResponseRedirect('/dash')
