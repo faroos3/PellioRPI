@@ -15,7 +15,7 @@ a:focus {
 
 a:hover {
   text-decoration: none;
-  color: #dedcef;
+  color: #ffff1a;
 }
 
 
@@ -75,7 +75,7 @@ iframe {
   align-items: center;
   padding: 15px;
 
-  background-color: #ffd633;
+  background-color: #99ccff;
 }
 
 .container-login100::before {
@@ -254,7 +254,7 @@ iframe {
   height: 40px;
   border-radius: 21px;
 
-  background: #372f6a;
+  background: #ff8c1a;
   
   position: relative;
   z-index: 1;
@@ -293,47 +293,11 @@ iframe {
 }
 
 
-
-h1
-{
-    /*font: "Lato";*/
-  font-size: 25px;
-  font-family: "Trebuchet MS", Trebuchet, monospace;
-}
-p
-{
-    /*font: "Lato";*/
-  font-size: 25px;
-  font-family: "Trebuchet MS", Trebuchet, sans-serif;
-  font-style: italic;
-}
-ol 
-{
-    display: contents;
-    list-style-type: decimal-leading-zero;
-    font-family: "Trebuchet MS", Trebuchet, sans-serif;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 40px;
-}
-.grid
-{
-    font: "Trebuchet MS";
-    list-style-type: none;
-}
-
-#radio form input
-{ 
-  font-family: "Trebuchet MS", Trebuchet, sans-serif;
-    margin: 0px 10px 0px 10px;
-}
 #header_wrapper
 {
  width:100%;
  min-width:980px;
- background-color:#87CEDA;
+ background-color:#4d4dff;
 }
 #header
 {
@@ -341,11 +305,6 @@ ol
  margin:0px auto;
  padding:0px;
  height:100px;
-}
-
-#Intro
-{
-  font-family: "Trebuchet MS", Trebuchet, sans-serif;
 }
 #header li
 {
@@ -361,59 +320,6 @@ ol
  margin-left: 375px;
 }
 
-#header form
-{
- margin-top:8px;
- float:right;
-}
-#header form li
-{
- font-size:13px;
- margin-left:15px;
-}
-#header form li a
-{
- color:#FF4500;
- text-decoration:none;
-}
-#header form input[type="text"]
-{
- font: "Lato";
- margin-top:3px;
- margin-bottom:3px;
- width:150px;
- border:1px solid #08298A;
- height:25px;
- padding-left:3px;
-}
-#header form input[type="password"]
-{
- margin-top:3px;
- margin-bottom:3px;
- width:150px;
- border:1px solid #08298A;
- height:25px;
- padding-left:3px;
-}
-
-#header form input[type="newAccount"]
-{
- height:22px;
- margin-top:5px;
- background-color:#8080ff;
- color:#000066;
- font-family: "Trebuchet MS", Trebuchet, sans-serif;
- border:2px solid #08298A;
-}
-#header form input[type="submit"]
-{
- height:25px;
- margin-top:5px;
- background-color:#8080ff;
- color:#000066;
- border:2px solid #08298A;
- font-family: "Trebuchet MS", Trebuchet, sans-serif;
-}
 #footer_wrapper
 {
  width:100%;
@@ -432,22 +338,7 @@ ol
   margin: 0;
   padding: 0;
 }
-.slide form input
-{ 
-  display:none
-}
 
-.slide {
-  margin: auto;
-}
-
-
-/* Slideshow container */
-.slideshow-container {
-  max-width:1050px;
-  position: relative;
-  margin: auto;
-}
 
 .footer {
   position: relative;
@@ -455,7 +346,7 @@ ol
   bottom: 0;
   left: 0;
   padding: 1rem;
-  background-color: #87CEDA;
+  background-color: #26004d;
   text-align: center;
   font-size: 15px;
   font-family: "Trebuchet MS", Trebuchet, monospace;
@@ -486,24 +377,15 @@ ol
  margin-top:10px;
  font: "Lato";
 }
-#id_username
+
+#intro
 {
- width:100%;
- height:40px;
- border-radius:5px;
- padding-left:10px;
- font-size:18px; 
- font: "Lato";
- border:1px solid #BDBDBD;
-}
-#id_password1, #id_password2
-{
- width:100%;
- height:40px;
- border-radius:5px;
- padding-left:10px;
- font-size:18px;
- border:1px solid #BDBDBD;
+  font-family: "Trebuchet MS", Trebuchet, sans-serif;
+  
+  text-align: center;
+  color: #330066;
+  font-size: 30px;
+  margin-bottom: 50px;
 }
 #bwrapper
 {
@@ -525,20 +407,4 @@ ol
  display: inline-block;
  position: relative;
  text-shadow: 0 1px 2px rgba(0,0,0,.5);
-}
-#step1
-{
-    background: #ffd633;
-}
-#step2
-{
-    background: #ff8533;
-}
-#step3
-{
-    background: #ff6600;
-}
-#First
-{
-    background: #ffff66;
 }
