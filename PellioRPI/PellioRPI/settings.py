@@ -79,8 +79,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'Pelliodb',
-        'USER': 'kellypatel',
-        'PASSWORD': 'croton10520',
+        'USER': 'root',
+        'PASSWORD': '',
         'HOST': '127.0.0.1',
     }
 }
