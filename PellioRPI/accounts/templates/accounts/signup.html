@@ -4,11 +4,68 @@
 {% load staticfiles %}
 
 <head>
-	<link href="{% static 'home/css/main.css' %}" type="text/css" rel="stylesheet"/>
+	<link href="{% static 'home/css/signup.css' %}" type="text/css" rel="stylesheet"/>
 </head>
+<div id="header_wrapper">
+		<div id="header">
+			<a href="../">
+        		<li id="logo"><img src="{% static 'pelliologo.jpg' %}" width="70" height="70"><img src="{% static 'logo9.png' %}" width="150" height="70"></li>
+      		</a>
+		</div>
+	</div>
 
 <body>
-	<div id="header_wrapper">
+	
+
+	<div class="limiter">
+
+    <div class="container-login100" >
+
+      <div class="wrap-login100 p-t-30 p-b-50">
+      	 
+    <div id="intro">
+		Thanks for signing up for Pellio!
+		We'll need some info to get you started...
+	</div>
+	
+        <span class="login100-form-title p-b-41">
+          Create a Pellio Account!
+        </span>
+        <form class="login100-form validate-form p-b-33 p-t-5" method="POST">
+        {% csrf_token %}
+        {% for field in form %}
+        <div class="fieldWrapper">
+                  {{ field.errors }}
+                  {{ field.label_tag }} {{ field }}
+              </div>
+          {% endfor %}
+          <div class="wrap-input100 validate-input" data-validate = "Enter username">
+
+            <input class="input100" type="text" name="username" placeholder="Create a Username!">
+            <span class="focus-input100" data-placeholder="&#xe82a;"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input" data-validate="Enter password">
+            <input class="input100" type="password" name="pass" placeholder="Create Password">
+            <span class="focus-input100" data-placeholder="&#xe80f;"></span>
+          </div>
+
+		<div class="wrap-input100 validate-input" data-validate="Enter password">
+            <input class="input100" type="password" name="pass" placeholder="Confirm Password">
+            <span class="focus-input100" data-placeholder="&#xe80f;"></span>
+        </div>
+          <div class="container-login100-form-btn m-t-32">
+            <button class="login100-form-btn">
+              <a href="dash">
+              Create Account!
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+	<!-- <div id="header_wrapper">
 		<div id="header">
 			<a href="../">
         		<li id="logo"><img src="{% static 'pelliologo.jpg' %}" width="70" height="70"></li>
@@ -35,11 +92,11 @@
 				<!-- <li><input type="username" name="username" placeholder= "Username"></li>
 				<li><input type="password" name="password1" placeholder="New password"></li>
 				<li><input type="password" name="password2" placeholder="Re-enter password"></li> -->
-				<li><button id = "bwrapper" type="submit">Create an account</button></li>
+				<!-- <li><button id = "bwrapper" type="submit">Create an account</button></li>
 			</form>
 		</div>
-	</div>
-
+	</div> 
+ -->
   <!-- Footer -->
 	<div class="footer">Powered by <a href="https://rcos.io" title="RCOS">RCOS</a></div>
 

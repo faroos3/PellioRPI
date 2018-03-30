@@ -24,7 +24,9 @@ def index(request):
 
 
 # Basic idea: if user not authenticated, redirected them to home. If they are, fulfill request.
-
+def signupdash(request):
+	return render(request, 'home/dash.html')
+	
 def gad7(request):
 	if not request.user.is_authenticated:
 		return HttpResponseRedirect('../')
