@@ -1,3 +1,11 @@
-from django.db import models
+#from django import models
+#from django import forms
 
-# Create your models here.
+
+#GENDER_CHOICES = (
+#   ('M', 'Male'),
+#   ('F', 'Female')
+#)
+
+#class Profile(models.Model):
+#     gender = forms.ChoiceField(choices=GENDER_CHOICES, widget=forms.RadioSelect())

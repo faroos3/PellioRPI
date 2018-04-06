@@ -1,77 +1,58 @@
-<h1> Logged in as {{ user.username }} </h1>
-
 <a class="btn btn-primary" href="/dash">Back</a>
 
 <h3> This is the GAD7 <h3>
- <tr>
-   <td></td>
-    <td>0: Not At All Sure<br></td>
-   <td>1: Several Days<br></td>
-   <td>2: Over Half the Days<br></td>
-   <td>3: Nearly Every Day<br></td>
- </tr>
-
- <ol>
- 	<tr id = "GAD1" class="datafield">
-   <td class="griditem"><li>Feeling nervous, anxious, or on edge</li></td>
-   <td><input type=radio value="1"></td>
-   <td><input type=radio value="2"></td>
-   <td><input type=radio value="3"></td>
-   <td><input type=radio value="4"></td>
- 	</tr>	
  
- <tr class="datafield">
-   <td class="griditem"><li>Not being able to stop control or worrying</li></td>
-   <td><input type=radio  name="GAD2" value="1"></td>
-   <td><input type=radio  name="GAD2" value="2"></td>
-   <td><input type=radio  name="GAD2" value="3"></td>
-   <td><input type=radio  name="GAD2" value="4"></td>
- </tr>
- 
- <tr>
-   <td class="griditem"><li>Worrying too much about many things</li></td>
-   <td><input type=radio  name="GAD3" value="1"></td>
-   <td><input type=radio  name="GAD3" value="2"></td>
-   <td><input type=radio  name="GAD3" value="3"></td>
-   <td><input type=radio  name="GAD3" value="4"></td>
- </tr>
- <tr>
-   <td class="griditem"><li>Trouble relaxing</li></td>
-   <td><input type=radio  name="GAD4" value="1"></td>
-   <td><input type=radio  name="GAD4" value="2"></td>
-   <td><input type=radio  name="GAD4" value="3"></td>
-   <td><input type=radio  name="GAD4" value="4"></td>
- </tr>
- <tr>
-   <td class="griditem"><li>Restlessness to the point of that you have trouble sitting still</li></td>
-   <td><input type=radio  name="GAD5" value="1"></td>
-   <td><input type=radio  name="GAD5" value="2"></td>
-   <td><input type=radio  name="GAD5" value="3"></td>
-   <td><input type=radio  name="GAD5" value="4"></td>
- </tr>
- <tr>
-   <td class="griditem"><li>Becoming easily annoyed</li></td>
-   <td><input type=radio  name="GAD6" value="1"></td>
-   <td><input type=radio  name="GAD6" value="2"></td>
-   <td><input type=radio  name="GAD6" value="3"></td>
-   <td><input type=radio  name="GAD6" value="4"></td>
- </tr>
- <tr>
-   <td class="griditem"><li>Feeling afraid as if something awful is to come</li></td>
-   <td><input type=radio  name="GAD7" value="1"></td>
-   <td><input type=radio  name="GAD7" value="2"></td>
-   <td><input type=radio  name="GAD7" value="3"></td>
-   <td><input type=radio  name="GAD7" value="4"></td>
- </tr>
-
- </tr>
-    </ol>
-        </table>
-            <div id = "pan_result_1">
-            <form action = "submit" align = "center">
-                <input type = "submit" value="Results">
-            </form>
-            </div>
-            </div>
-        </div>
-    <br>
+ <form action="/dash/gad7/submit" method="post">
+	{% csrf_token %}
+	{{ form }}
+    <label for="1">Feeling nervous, anxious, or on edge: </label>
+	<br />
+    <input id="0" type="radio" name="1" value="0">
+	<input id="1" type="radio" name="1" value="1">
+	<input id="2" type="radio" name="1" value="2">
+	<input id="3" type="radio" name="1" value="3">
+	<br />
+	<label for="2">Not being able to stop control or worrying: </label>
+	<br />
+    <input id="0" type="radio" name="2" value="0">
+	<input id="1" type="radio" name="2" value="1">
+	<input id="2" type="radio" name="2" value="2">
+	<input id="3" type="radio" name="2" value="3">
+	<br />
+	<label for="3">Worrying too much about many things: </label>
+	<br />
+    <input id="0" type="radio" name="3" value="0">
+	<input id="1" type="radio" name="3" value="1">
+	<input id="2" type="radio" name="3" value="2">
+	<input id="3" type="radio" name="3" value="3">
+	<br />
+	<label for="4">Trouble relaxing: </label>
+	<br />
+    <input id="0" type="radio" name="4" value="0">
+	<input id="1" type="radio" name="4" value="1">
+	<input id="2" type="radio" name="4" value="2">
+	<input id="3" type="radio" name="4" value="3">
+	<br />
+	<label for="5">Restlessness to the point of that you have trouble sitting still: </label>
+	<br />
+    <input id="0" type="radio" name="5" value="0">
+	<input id="1" type="radio" name="5" value="1">
+	<input id="2" type="radio" name="5" value="2">
+	<input id="3" type="radio" name="5" value="3">
+	<br />
+	<label for="6">Becoming easily annoyed: </label>
+	<br />
+    <input id="0" type="radio" name="6" value="0">
+	<input id="1" type="radio" name="6" value="1">
+	<input id="2" type="radio" name="6" value="2">
+	<input id="3" type="radio" name="6" value="3">
+	<br />
+	<label for="7">Feeling afraid as if something awful is to come: </label>
+	<br />
+    <input id="0" type="radio" name="7" value="0">
+	<input id="1" type="radio" name="7" value="1">
+	<input id="2" type="radio" name="7" value="2">
+	<input id="3" type="radio" name="7" value="3">
+	<br />
+	<input type="submit" value="Submit">
+</form>
