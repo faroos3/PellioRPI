@@ -3,12 +3,42 @@ from django.contrib.auth import login as auth_login
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import authenticate
 from django.http import HttpResponseRedirect
+from django.views.decorators.csrf import csrf_exempt
 
 from .forms import GAD7Form
 from .forms import PHQ9Form
+from .forms import HomeForm
 
 def index(request):
 	print("Home page")
+	Hfirst = ''
+	Hsecond = ''
+	Hthird = ''
+	Hfourth = ''
+	Hfifth = ''
+	Hsixth = ''
+	Hseventh = ''
+	Heighth = ''
+	Hninth = ''
+	Htenth = ''
+	Heleventh = ''
+	if request.method == 'GET':
+		homeform = HomeForm(request.POST or None)
+		if homeform.is_valid():
+			return render(request, 'home/success.html')
+			Hfirst = homeform.cleaned_data['first']
+			Hsecond = homeform.cleaned_data['second']
+			Hthird = homeform.cleaned_data['third']
+			Hfourth = homeform.cleaned_data['fourth']
+			Hfifth = homeform.cleaned_data['fifth']
+			Hsixth = homeform.cleaned_data['sixth']
+			Hseventh = homeform.cleaned_data['seventh']
+			Heigth = homeform.cleaned_data['eighth']
+			Hninth = homeform.cleaned_data['ninth']
+			Htenth = homeform.cleaned_data['tenth']
+			Heleventh = homeform.cleaned_data['eleventh']
+			return render(request, 'home/success.html')
+			
 	if request.method == 'POST':
 		form = AuthenticationForm(data = request.POST)
 		if form.is_valid():
@@ -37,7 +67,6 @@ def gad7(request):
 	Gfifth = ''
 	Gsixth = ''
 	Gseventh = ''
-			
 	if not request.user.is_authenticated:
 		return HttpResponseRedirect('../')
 	if request.method == 'POST':#They tried to submit something
@@ -50,9 +79,9 @@ def gad7(request):
 			Gfifth = gad7form.cleaned_data['fifth']
 			Gsixth = gad7form.cleaned_data['sixth']
 			Gseventh = gad7form.cleaned_data['seventh']
-			return render(request, 'home/wtf.html')
+			return render(request, 'home/success.html')
 		else:
-			return render(request, 'home/omg.html')
+			return render(request, 'home/invalid.html')
 		return render(request, 'home/dash.html')
 	return render(request, 'home/GAD7.html')
 	
@@ -64,7 +93,7 @@ def phq9(request):
 	Pfifth = ''
 	Psixth = ''
 	Pseventh = ''
-	eighth = ''
+	Peighth = ''
 	Pninth = ''
 	
 	if not request.user.is_authenticated:
@@ -81,9 +110,9 @@ def phq9(request):
 			Pseventh = form.cleaned_data['seventh']
 			Peighth = form.cleaned_data['eighth']
 			Pninth = form.cleaned_data['ninth']
-			return render(request, 'home/wtf.html')
+			return render(request, 'home/success.html')
 		else:
-			return render(request, 'home/omg.html')
+			return render(request, 'home/invalid.html')
 		return render(request, 'home/dash.html')
 	return render(request, 'home/PHQ9.html')
 	

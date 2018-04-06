@@ -3,6 +3,7 @@
 
 {% load staticfiles %}
 
+
 <head>
   <title>Pellio Home</title>
 	<link href="{% static 'home/css/main.css' %}" type="text/css" rel="stylesheet"/>
@@ -59,7 +60,6 @@
     </div>
   </div>
   
-
 
 			<!-- <form method = "POST">
 				{% csrf_token %}
@@ -124,6 +124,9 @@
    <td>Quite a Bit</td>
    <td>Strongly</td>
  </tr>
+ 
+ 
+<form action="/" method="post">
 
 <tr>
    <td>Interested</td>
@@ -245,18 +248,24 @@
     <td><input type="radio" value="5" name="enthusiastic"/></td>
   </td>
 
-</tr>
+  
+  
+  </tr>
     </ol>
         </table>
           <div>
             <!-- <div id = "pan_result_1"> -->
             <form action = "submit" align = "center">
+				{% csrf_token %}
                 <input type = "submit" value=" Results ">
             </form>
             <!-- </div> -->
             </div>
         </div>
     <br>
+
+	</form>
+
 
 
 	<br>
@@ -286,6 +295,9 @@
    <td>Quite a Bit</td>
    <td>Strongly</td>
  </tr>
+
+<form method="get">
+{% csrf_token  %}
 
 <tr>
    <td>Interested</td>
@@ -417,6 +429,9 @@
             <!-- </div> -->
         </div>
     <br>
+	
+	
+	</form>
     <div class="footer">Powered by <a href="https://rcos.io" title="RCOS">RCOS</a></div>
     </div>
     </body>
