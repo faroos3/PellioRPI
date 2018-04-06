@@ -31,20 +31,7 @@ def signupdash(request):
 def gad7(request):
 	if not request.user.is_authenticated:
 		return HttpResponseRedirect('../')
-	return render(request, 'home/GAD7.html')
-	
-def phq9(request):
-	if not request.user.is_authenticated:
-		return HttpResponseRedirect('../')
-	return render(request, 'home/PHQ9.html')
-	
-def dash(request):
-	if not request.user.is_authenticated:
-		return HttpResponseRedirect('../')
-	return render(request, 'home/dash.html')
-	
-def gad7sub(request):
-	if request.method == 'POST':
+	if request.method == 'POST':#They tried to submit something
 		form = GAD7Form(request.POST)
 		if form.is_valid():
 			feild1 = form.cleaned_data['feild1']
@@ -56,12 +43,19 @@ def gad7sub(request):
 			feild7 = form.cleaned_data['feild7']
 			p = Person(feild1=feild1, feild2=feild2, feild3=feild3, feild4=feild4, feild5=feild5, feild6=feild6, feild7=feild7)
 			p.save()
-			return render(request, 'home/wtf')
-	else:
-		form = GAD7Form()
-	return render(request, 'home/wtf')
+			return render(request, 'home/wtf.html')	
+		return render(request, 'home/dash.html')
+	return render(request, 'home/GAD7.html')
 	
-		
+def phq9(request):
+	if not request.user.is_authenticated:
+		return HttpResponseRedirect('../')
+	return render(request, 'home/PHQ9.html')
+	
+def dash(request):
+	if not request.user.is_authenticated:
+		return HttpResponseRedirect('../')
+	return render(request, 'home/dash.html')
 			
 	
 def phq9sub(request):
