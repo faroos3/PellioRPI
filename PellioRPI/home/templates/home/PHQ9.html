@@ -12,82 +12,73 @@
    <td>3: Nearly Every Day<br></td>
  </tr>
 
- <ol>
- 	<tr id = "PHQ1" class="datafield">
-   <td class="griditem"><li>Little interest or pleasure in doing things</li></td>
-   <td><input type=radio value="1"></td>
-   <td><input type=radio value="2"></td>
-   <td><input type=radio value="3"></td>
-   <td><input type=radio value="4"></td>
- 	</tr>	
  
- <tr class="datafield">
-   <td class="griditem"><li>Feeling down, all played out, depressed</li></td>
-   <td><input type=radio  name="PHQ2" value="1"></td>
-   <td><input type=radio  name="PHQ2" value="2"></td>
-   <td><input type=radio  name="PHQ2" value="3"></td>
-   <td><input type=radio  name="PHQ2" value="4"></td>
- </tr>
- 
- <tr>
-   <td class="griditem"><li>Trouble falling or staying asleep or sleeping too much</li></td>
-   <td><input type=radio  name="PHQ3" value="1"></td>
-   <td><input type=radio  name="PHQ3" value="2"></td>
-   <td><input type=radio  name="PHQ3" value="3"></td>
-   <td><input type=radio  name="PHQ3" value="4"></td>
- </tr>
- <tr>
-   <td class="griditem"><li>Feeling tired or exhausted</li></td>
-   <td><input type=radio  name="PHQ4" value="1"></td>
-   <td><input type=radio  name="PHQ4" value="2"></td>
-   <td><input type=radio  name="PHQ4" value="3"></td>
-   <td><input type=radio  name="PHQ4" value="4"></td>
- </tr>
- <tr>
-   <td class="griditem"><li>Poor appetite, or overeating</li></td>
-   <td><input type=radio  name="PHQ5" value="1"></td>
-   <td><input type=radio  name="PHQ5" value="2"></td>
-   <td><input type=radio  name="PHQ5" value="3"></td>
-   <td><input type=radio  name="PHQ5" value="4"></td>
- </tr>
- <tr>
-   <td class="griditem"><li>Feeling as if you are a failure</li></td>
-   <td><input type=radio  name="PHQ6" value="1"></td>
-   <td><input type=radio  name="PHQ6" value="2"></td>
-   <td><input type=radio  name="PHQ6" value="3"></td>
-   <td><input type=radio  name="PHQ6" value="4"></td>
- </tr>
- <tr>
-   <td class="griditem"><li>Trouble concentrating</li></td>
-   <td><input type=radio  name="PHQ7" value="1"></td>
-   <td><input type=radio  name="PHQ7" value="2"></td>
-   <td><input type=radio  name="PHQ7" value="3"></td>
-   <td><input type=radio  name="PHQ7" value="4"></td>
- </tr>
-  <tr>
-   <td class="griditem"><li>Either moving or speaking slowly or constantly fidgeting</li></td>
-   <td><input type=radio  name="PHQ8" value="1"></td>
-   <td><input type=radio  name="PHQ8" value="2"></td>
-   <td><input type=radio  name="PHQ8" value="3"></td>
-   <td><input type=radio  name="PHQ8" value="4"></td>
- </tr>
-  <tr>
-   <td class="griditem"><li>Thoughts that everyone would be better off without you</li></td>
-   <td><input type=radio  name="PHQ9" value="1"></td>
-   <td><input type=radio  name="PHQ9" value="2"></td>
-   <td><input type=radio  name="PHQ9" value="3"></td>
-   <td><input type=radio  name="PHQ9" value="4"></td>
- </tr>
+ <form method="post">
+	{% csrf_token %}
+	{{ form }}
+    <label for="1">Little interest or pleasure in doing things: </label>
+	<br />
+    <input id="first" type="radio" name="first" value="1">
+	<input id="first" type="radio" name="first" value="2">
+	<input id="first" type="radio" name="first" value="3">
+	<input id="first" type="radio" name="first" value="4">
+	<br />
+	<label for="2">Feeling down, all played out, depressed: </label>
+	<br />
+    <input id="second" type="radio" name="second" value="1">
+	<input id="second" type="radio" name="second" value="2">
+	<input id="second" type="radio" name="second" value="3">
+	<input id="second" type="radio" name="second" value="4">
+	<br />
+	<label for="3">Trouble falling or staying asleep or sleeping too much: </label>
+	<br />
+    <input id="third" type="radio" name="third" value="1">
+	<input id="third" type="radio" name="third" value="2">
+	<input id="third" type="radio" name="third" value="3">
+	<input id="third" type="radio" name="third" value="4">
+	<br />
+	<label for="4">Feeling tired or exhausted: </label>
+	<br />
+    <input id="fourth" type="radio" name="fourth" value="1">
+	<input id="fourth" type="radio" name="fourth" value="2">
+	<input id="fourth" type="radio" name="fourth" value="3">
+	<input id="fourth" type="radio" name="fourth" value="4">
+	<br />
+	<label for="5">Poor appetite, or overeating: </label>
+	<br />
+    <input id="fifth" type="radio" name="fifth" value="1">
+	<input id="fifth" type="radio" name="fifth" value="2">
+	<input id="fifth" type="radio" name="fifth" value="3">
+	<input id="fifth" type="radio" name="fifth" value="4">
+	<br />
+	<label for="6">Feeling as if you are a failure: </label>
+	<br />
+    <input id="sixth" type="radio" name="sixth" value="1">
+	<input id="sixth" type="radio" name="sixth" value="2">
+	<input id="sixth" type="radio" name="sixth" value="3">
+	<input id="sixth" type="radio" name="sixth" value="4">
+	<br />
+	<label for="7">Trouble concentrating: </label>
+	<br />
+    <input id="seventh" type="radio" name="seventh" value="1">
+	<input id="seventh" type="radio" name="seventh" value="2">
+	<input id="seventh" type="radio" name="seventh" value="3">
+	<input id="seventh" type="radio" name="seventh" value="4">
+	<br />
+	<label for="7">Either moving or speaking slowly or constantly fidgeting: </label>
+	<br />
+    <input id="eighth" type="radio" name="eighth" value="1">
+	<input id="eighth" type="radio" name="eighth" value="2">
+	<input id="eighth" type="radio" name="eighth" value="3">
+	<input id="eighth" type="radio" name="eighth" value="4">
+	<br />
+	<label for="7">Thoughts that everyone would be better off without you: </label>
+	<br />
+    <input id="ninth" type="radio" name="ninth" value="1">
+	<input id="ninth" type="radio" name="ninth" value="2">
+	<input id="ninth" type="radio" name="ninth" value="3">
+	<input id="ninth" type="radio" name="ninth" value="4">
+	<br />
 
-
- </tr>
-    </ol>
-        </table>
-            <div id = "pan_result_1">
-            <form action = "submit" align = "center">
-                <input type = "submit" value="Results">
-            </form>
-            </div>
-            </div>
-        </div>
-    <br>
+	<input type="submit" value="Submit">
+</form>

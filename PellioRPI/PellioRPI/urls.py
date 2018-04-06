@@ -28,6 +28,4 @@ urlpatterns = [
 	path('dash/gad7/', home_views.gad7, name='gad7'),
     path('signup/dash', home_views.dash, name='signupdash'),
 	path('dash/phq9/', home_views.phq9, name='phq9'),
-	path('dash/phq9/submit', home_views.phq9, name='phq9sub'),
-	path('dash/gad7/submit', home_views.gad7, name='gad7sub'),
 ]
