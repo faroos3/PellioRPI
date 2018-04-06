@@ -50,7 +50,9 @@ def gad7(request):
 			Gfifth = gad7form.cleaned_data['fifth']
 			Gsixth = gad7form.cleaned_data['sixth']
 			Gseventh = gad7form.cleaned_data['seventh']
-			return render(request, 'home/wtf.html')	
+			return render(request, 'home/wtf.html')
+		else:
+			return render(request, 'home/omg.html')
 		return render(request, 'home/dash.html')
 	return render(request, 'home/GAD7.html')
 	
@@ -79,7 +81,9 @@ def phq9(request):
 			Pseventh = form.cleaned_data['seventh']
 			Peighth = form.cleaned_data['eighth']
 			Pninth = form.cleaned_data['ninth']
-			return render(request, 'home/wtf.html')	
+			return render(request, 'home/wtf.html')
+		else:
+			return render(request, 'home/omg.html')
 		return render(request, 'home/dash.html')
 	return render(request, 'home/PHQ9.html')
 	
