@@ -8,6 +8,7 @@ from django.views.decorators.csrf import csrf_exempt
 from .forms import GAD7Form
 from .forms import PHQ9Form
 from .forms import HomeForm
+from .models import gad7
 
 def index(request):
 	print("Home page")
@@ -72,13 +73,15 @@ def gad7(request):
 	if request.method == 'POST':#They tried to submit something
 		gad7form = GAD7Form(request.POST or None)
 		if gad7form.is_valid():
-			Gfirst = gad7form.cleaned_data['first']
-			Gsecond = gad7form.cleaned_data['second']
-			Gthird = gad7form.cleaned_data['third']
-			Gfourth = gad7form.cleaned_data['fourth']
-			Gfifth = gad7form.cleaned_data['fifth']
-			Gsixth = gad7form.cleaned_data['sixth']
-			Gseventh = gad7form.cleaned_data['seventh']
+			gfirst = gad7form.cleaned_data['first']
+			gsecond = gad7form.cleaned_data['second']
+			gthird = gad7form.cleaned_data['third']
+			gfourth = gad7form.cleaned_data['fourth']
+			gfifth = gad7form.cleaned_data['fifth']
+			gsixth = gad7form.cleaned_data['sixth']
+			gseventh = gad7form.cleaned_data['seventh']
+			#g = gad7(first = gfirst, second = gsecond, third=gthird, fourth=gfourth, fifth=gfifth, sixth=gsixth, seventh=gseventh)
+			#g.save()
 			return render(request, 'home/success.html')
 		else:
 			return render(request, 'home/invalid.html')

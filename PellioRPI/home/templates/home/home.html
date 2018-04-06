@@ -5,9 +5,8 @@
 
 
 <head>
-  <title>Pellio Home</title>
+	<title>Pellio Home</title>
 	<link href="{% static 'home/css/main.css' %}" type="text/css" rel="stylesheet"/>
-</head>
 </head>
 <body>
   
@@ -28,6 +27,7 @@
         </span>
         <form class="login100-form validate-form p-b-33 p-t-5" method = "POST">
           {% csrf_token %}
+		  
           <div class="wrap-input100 validate-input" data-validate = "Enter username">
             <input class="input100" type="text" name="username" placeholder="User name">
             <span class="focus-input100" ></span>
@@ -60,14 +60,6 @@
     </div>
   </div>
   
-
-			<!-- <form method = "POST">
-				{% csrf_token %}
-
-				<li>Username<br><input type="text" name="username"><br><a href="signup"><input type = "newAccount" name = "Need an account?" value = "       Need an account?"></a></li> 
- 				<li>Password<br><input type="password" name="password"><br><input type="submit" name="login" value="  Log In  "></li> 
-			</form> -->
-		
     <hr>
         <div id = "First">
     <br>
