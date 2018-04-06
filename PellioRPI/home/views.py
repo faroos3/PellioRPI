@@ -32,17 +32,15 @@ def gad7(request):
 	if not request.user.is_authenticated:
 		return HttpResponseRedirect('../')
 	if request.method == 'POST':#They tried to submit something
-		form = GAD7Form(request.POST)
+		form = GAD7Form(request.POST or None)
 		if form.is_valid():
-			feild1 = form.cleaned_data['feild1']
-			feild2 = form.cleaned_data['feild2']
-			feild3 = form.cleaned_data['feild3']
-			feild4 = form.cleaned_data['feild4']
-			feild5 = form.cleaned_data['feild5']
-			feild6 = form.cleaned_data['feild6']
-			feild7 = form.cleaned_data['feild7']
-			p = Person(feild1=feild1, feild2=feild2, feild3=feild3, feild4=feild4, feild5=feild5, feild6=feild6, feild7=feild7)
-			p.save()
+			first = form.cleaned_data['first']
+			second = form.cleaned_data['second']
+			third = form.cleaned_data['third']
+			fourth = form.cleaned_data['fourth']
+			fifth = form.cleaned_data['fifth']
+			sixth = form.cleaned_data['sixth']
+			seventh = form.cleaned_data['seventh']
 			return render(request, 'home/wtf.html')	
 		return render(request, 'home/dash.html')
 	return render(request, 'home/GAD7.html')
