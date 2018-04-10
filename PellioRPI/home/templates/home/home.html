@@ -3,10 +3,12 @@
 
 {% load staticfiles %}
 
-
 <head>
-	<title>Pellio Home</title>
+  <title>Pellio Home</title>
 	<link href="{% static 'home/css/main.css' %}" type="text/css" rel="stylesheet"/>
+  <script src="https://code.jquery.com/jquery-1.12.0.js"></script>
+  <script src="{% static 'home/javascript/main.js' %}"></script>
+</head>
 </head>
 <body>
   
@@ -27,7 +29,6 @@
         </span>
         <form class="login100-form validate-form p-b-33 p-t-5" method = "POST">
           {% csrf_token %}
-		  
           <div class="wrap-input100 validate-input" data-validate = "Enter username">
             <input class="input100" type="text" name="username" placeholder="User name">
             <span class="focus-input100" ></span>
@@ -60,6 +61,15 @@
     </div>
   </div>
   
+
+
+			<!-- <form method = "POST">
+				{% csrf_token %}
+
+				<li>Username<br><input type="text" name="username"><br><a href="signup"><input type = "newAccount" name = "Need an account?" value = "       Need an account?"></a></li> 
+ 				<li>Password<br><input type="password" name="password"><br><input type="submit" name="login" value="  Log In  "></li> 
+			</form> -->
+		
     <hr>
         <div id = "First">
     <br>
@@ -105,7 +115,7 @@
         <div id = "Survey" align = "center">
         <table class="grid" align ="center" cellspacing="20">
  
-
+ 
 
 
  <tr>
@@ -116,9 +126,6 @@
    <td>Quite a Bit</td>
    <td>Strongly</td>
  </tr>
- 
- 
-<form action="/" method="post">
 
 <tr>
    <td>Interested</td>
@@ -145,11 +152,11 @@
 <tr>
   <td>Alert</td>
   <td align="center">
-    <td><input type="radio" value="1" name="alert"></td>
-    <td><input type="radio" value="2" name="alert"/></td>
-    <td><input type="radio" value="3" name="alert"/></td>
-    <td><input type="radio" value="4" name="alert"/></td>
-    <td><input type="radio" value="5" name="alert"/></td>
+    <td><input type="radio" value="1" name="alerted"></td>
+    <td><input type="radio" value="2" name="alerted"/></td>
+    <td><input type="radio" value="3" name="alerted"/></td>
+    <td><input type="radio" value="4" name="alerted"/></td>
+    <td><input type="radio" value="5" name="alerted"/></td>
   </td>
 </tr>
 
@@ -240,24 +247,18 @@
     <td><input type="radio" value="5" name="enthusiastic"/></td>
   </td>
 
-  
-  
-  </tr>
+</tr>
     </ol>
         </table>
           <div>
             <!-- <div id = "pan_result_1"> -->
-            <form action = "submit" align = "center">
-				{% csrf_token %}
-                <input type = "submit" value=" Results ">
-            </form>
+            <!-- <form action = "submit" align = "center"> -->
+                <input id="firstClick" type = "submit" value=" submit ">
+            <!-- </form> -->
             <!-- </div> -->
             </div>
         </div>
     <br>
-
-	</form>
-
 
 
 	<br>
@@ -288,142 +289,136 @@
    <td>Strongly</td>
  </tr>
 
-<form method="get">
-{% csrf_token  %}
-
 <tr>
    <td>Interested</td>
   <td align="center">
-    <td><input type="radio" value="1" name="interested"></td>
-    <td><input type="radio" value="2" name="interested"/></td>
-    <td><input type="radio" value="3" name="interested"/></td>
-    <td><input type="radio" value="4" name="interested"/></td>
-    <td><input type="radio" value="5" name="interested"/></td>
+    <td><input type="radio" value="1" name="interested2"></td>
+    <td><input type="radio" value="2" name="interested2"/></td>
+    <td><input type="radio" value="3" name="interested2"/></td>
+    <td><input type="radio" value="4" name="interested2"/></td>
+    <td><input type="radio" value="5" name="interested2"/></td>
   </td>
 </tr>
 
 <tr>
   <td>Distressed</td>
   <td align="center">
-    <td><input type="radio" value="1" name="distressed"></td>
-    <td><input type="radio" value="2" name="distressed"/></td>
-    <td><input type="radio" value="3" name="distressed"/></td>
-    <td><input type="radio" value="4" name="distressed"/></td>
-    <td><input type="radio" value="5" name="distressed"/></td>
+    <td><input type="radio" value="1" name="distressed2"></td>
+    <td><input type="radio" value="2" name="distressed2"/></td>
+    <td><input type="radio" value="3" name="distressed2"/></td>
+    <td><input type="radio" value="4" name="distressed2"/></td>
+    <td><input type="radio" value="5" name="distressed2"/></td>
   </td>
 </tr>
 
 <tr>
   <td>Alert</td>
   <td align="center">
-    <td><input type="radio" value="1" name="alert"></td>
-    <td><input type="radio" value="2" name="alert"/></td>
-    <td><input type="radio" value="3" name="alert"/></td>
-    <td><input type="radio" value="4" name="alert"/></td>
-    <td><input type="radio" value="5" name="alert"/></td>
+    <td><input type="radio" value="1" name="alerted2"></td>
+    <td><input type="radio" value="2" name="alerted2"/></td>
+    <td><input type="radio" value="3" name="alerted2"/></td>
+    <td><input type="radio" value="4" name="alerted2"/></td>
+    <td><input type="radio" value="5" name="alerted2"/></td>
   </td>
 </tr>
 
 <tr>
   <td>Excited</td>
   <td align="center">
-    <td><input type="radio" value="1" name="excited"></td>
-    <td><input type="radio" value="2" name="excited"/></td>
-    <td><input type="radio" value="3" name="excited"/></td>
-    <td><input type="radio" value="4" name="excited"/></td>
-    <td><input type="radio" value="5" name="excited"/></td>
+    <td><input type="radio" value="1" name="excited2"></td>
+    <td><input type="radio" value="2" name="excited2"/></td>
+    <td><input type="radio" value="3" name="excited2"/></td>
+    <td><input type="radio" value="4" name="excited2"/></td>
+    <td><input type="radio" value="5" name="excited2"/></td>
   </td>
 </tr>
 
 <tr>
   <td>Upset</td>
   <td align="center">
-    <td><input type="radio" value="1" name="upset"></td>
-    <td><input type="radio" value="2" name="upset"/></td>
-    <td><input type="radio" value="3" name="upset"/></td>
-    <td><input type="radio" value="4" name="upset"/></td>
-    <td><input type="radio" value="5" name="upset"/></td>
+    <td><input type="radio" value="1" name="upset2"></td>
+    <td><input type="radio" value="2" name="upset2"/></td>
+    <td><input type="radio" value="3" name="upset2"/></td>
+    <td><input type="radio" value="4" name="upset2"/></td>
+    <td><input type="radio" value="5" name="upset2"/></td>
   </td>
 </tr>
 
 <tr>
   <td>Strong</td>
   <td align="center">
-    <td><input type="radio" value="1" name="strong"></td>
-    <td><input type="radio" value="2" name="strong"/></td>
-    <td><input type="radio" value="3" name="strong"/></td>
-    <td><input type="radio" value="4" name="strong"/></td>
-    <td><input type="radio" value="5" name="strong"/></td>
+    <td><input type="radio" value="1" name="strong2"></td>
+    <td><input type="radio" value="2" name="strong2"/></td>
+    <td><input type="radio" value="3" name="strong2"/></td>
+    <td><input type="radio" value="4" name="strong2"/></td>
+    <td><input type="radio" value="5" name="strong2"/></td>
   </td>
 </tr>
 
 <tr>
   <td>Inspired</td>
   <td align="center">
-    <td><input type="radio" value="1" name="inspired"></td>
-    <td><input type="radio" value="2" name="inspired"/></td>
-    <td><input type="radio" value="3" name="inspired"/></td>
-    <td><input type="radio" value="4" name="inspired"/></td>
-    <td><input type="radio" value="5" name="inspired"/></td>
+    <td><input type="radio" value="1" name="inspired2"></td>
+    <td><input type="radio" value="2" name="inspired2"/></td>
+    <td><input type="radio" value="3" name="inspired2"/></td>
+    <td><input type="radio" value="4" name="inspired2"/></td>
+    <td><input type="radio" value="5" name="inspired2"/></td>
   </td>
 </tr>
 
 <tr>
   <td>Nervous</td>
   <td align="center">
-    <td><input type="radio" value="1" name="nervous"></td>
-    <td><input type="radio" value="2" name="nervous"/></td>
-    <td><input type="radio" value="3" name="nervous"/></td>
-    <td><input type="radio" value="4" name="nervous"/></td>
-    <td><input type="radio" value="5" name="nervous"/></td>
+    <td><input type="radio" value="1" name="nervous2"></td>
+    <td><input type="radio" value="2" name="nervous2"/></td>
+    <td><input type="radio" value="3" name="nervous2"/></td>
+    <td><input type="radio" value="4" name="nervous2"/></td>
+    <td><input type="radio" value="5" name="nervous2"/></td>
   </td>
 </tr>
 
 <tr>
   <td>Scared</td>
   <td align="center">
-    <td><input type="radio" value="1" name="scared"></td>
-    <td><input type="radio" value="2" name="scared"/></td>
-    <td><input type="radio" value="3" name="scared"/></td>
-    <td><input type="radio" value="4" name="scared"/></td>
-    <td><input type="radio" value="5" name="scared"/></td>
+    <td><input type="radio" value="1" name="scared2"></td>
+    <td><input type="radio" value="2" name="scared2"/></td>
+    <td><input type="radio" value="3" name="scared2"/></td>
+    <td><input type="radio" value="4" name="scared2"/></td>
+    <td><input type="radio" value="5" name="scared2"/></td>
   </td>
 </tr>
 
 <tr>
   <td>Jittery</td>
   <td align="center">
-    <td><input type="radio" value="1" name="jittery"></td>
-    <td><input type="radio" value="2" name="jittery"/></td>
-    <td><input type="radio" value="3" name="jittery"/></td>
-    <td><input type="radio" value="4" name="jittery"/></td>
-    <td><input type="radio" value="5" name="jittery"/></td>
+    <td><input type="radio" value="1" name="jittery2"></td>
+    <td><input type="radio" value="2" name="jittery2"/></td>
+    <td><input type="radio" value="3" name="jittery2"/></td>
+    <td><input type="radio" value="4" name="jittery2"/></td>
+    <td><input type="radio" value="5" name="jittery2"/></td>
   </td>
 </tr>
 
 <tr>
   <td>Enthusiastic</td>
   <td align="center">
-    <td><input type="radio" value="1" name="enthusiastic"></td>
-    <td><input type="radio" value="2" name="enthusiastic"/></td>
-    <td><input type="radio" value="3" name="enthusiastic"/></td>
-    <td><input type="radio" value="4" name="enthusiastic"/></td>
-    <td><input type="radio" value="5" name="enthusiastic"/></td>
+    <td><input type="radio" value="1" name="enthusiastic2"></td>
+    <td><input type="radio" value="2" name="enthusiastic2"/></td>
+    <td><input type="radio" value="3" name="enthusiastic2"/></td>
+    <td><input type="radio" value="4" name="enthusiastic2"/></td>
+    <td><input type="radio" value="5" name="enthusiastic2"/></td>
   </td>
  
     </ol>
         </table>
             <div>
             <!-- <div id = "pan_result_2"> -->
-            <form action = "submit" align = "center">
-                <input type = "submit" value=" Results ">
-            </form>
+            <!-- <form action = "submit" align = "center"> -->
+                <input id ="resultClick" type = "submit" value=" Results ">
+            <!-- </form> -->
             <!-- </div> -->
         </div>
     <br>
-	
-	
-	</form>
     <div class="footer">Powered by <a href="https://rcos.io" title="RCOS">RCOS</a></div>
     </div>
     </body>
