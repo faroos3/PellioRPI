@@ -3,4 +3,4 @@
 
 For Dependency info, view Depencies.md
 
-For instructions on how to install SQL, and a quick navigation guide, visit the Wiki: https://github.com/faroos3/PellioRPI/wiki
+For instructions on how to install SQL, and a getting started guide, visit the Wiki: https://github.com/faroos3/PellioRPI/wiki
