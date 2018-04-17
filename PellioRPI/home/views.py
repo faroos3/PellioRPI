@@ -61,13 +61,6 @@ def signupdash(request):
 	return render(request, 'home/dash.html')
 	
 def gad7(request):
-	Gfirst = ''
-	Gsecond = ''
-	Gthird = ''
-	Gfourth = ''
-	Gfifth = ''
-	Gsixth = ''
-	Gseventh = ''
 	if not request.user.is_authenticated:
 		return HttpResponseRedirect('../')
 	if request.method == 'POST':#They tried to submit something

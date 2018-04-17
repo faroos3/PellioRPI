@@ -19,5 +19,4 @@ class gad7(models.Model):
 	fifth = models.CharField(choices=HAPPINESS, max_length=1)
 	sixth = models.CharField(choices=HAPPINESS, max_length=1)
 	seventh = models.CharField(choices=HAPPINESS, max_length=1)
-    	
-	
+   
