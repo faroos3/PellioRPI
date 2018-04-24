@@ -11,13 +11,14 @@ The purpose of this document is to help people new to the project and to keep th
 	* Overall aesthetics improved
 	* Carousel fixed (size and position)
 	* Login system improved
-	* Pellio Logo created/old "logo" cleaned
+	* Pellio Logo created/old "logo" cleaned. Logo also links to home page.
 	* Login now redirects to DASH
 * Dash:
 	* User Interface where the user can select different experiments and monitor results.
 	* Currently not the best looking, but we're getting there
 * Signup:
 	* Accounts can be created and will redirect to DASH
+	* Invalid attempts will send a notification to user.
 * New Experiments:
 	* GAD7
 	* PHQ
