@@ -109,6 +109,8 @@ ol
 	padding: 0;
 }
 .slide
+/*THIS IS NOT THE MAIN.CSS YOU'RE PROBABLY LOOKING FOR. GO TO home/static/home/css and the main.css in there is it*/
+
 { 
 	display:none
 }
