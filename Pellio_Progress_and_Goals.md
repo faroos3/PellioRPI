@@ -7,7 +7,7 @@ The purpose of this document is to help people new to the project and to keep th
 ### Accomplishments:
 * Fixed home page:
 	* Radio buttons fixed
-	* Data is being recoded and stored
+	* Feedback based on input comes up in a notification (front page experiment)
 	* Overall aesthetics improved
 	* Carousel fixed (size and position)
 	* Login system improved
@@ -22,6 +22,7 @@ The purpose of this document is to help people new to the project and to keep th
 * New Experiments:
 	* GAD7
 	* PHQ
+	* Data storage initially implemented
 	* Front-end not yet implemented.
 
 
